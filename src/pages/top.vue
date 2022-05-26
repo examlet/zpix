@@ -7,7 +7,7 @@
             Pague a mensalidade
         </h2>
         <div pt="20px sm:40px" mx-auto w-full>
-            <QCard max-w-300px hoverable title="PARTA Top">
+            <QCard max-w-600px hoverable title="PARTA Top">
                 <template #cover>
                     <div w-full h-4px bg="[#a0ec00]" />
                 </template>
