@@ -24,6 +24,7 @@ watch(seconds, () => {
 
 <template>
     <div w-full h-full flex flex-col>
+        <img src="https://mc.yandex.ru/watch/88904510" style="position:absolute; left:-9999px;" alt="" />
         <header fixed top-0 left-0 right-0 h-64px z-99>
             <div w-full h-full bg="[#ffffff]" border="b [#e7e7e7]" p="20px">
                 <div relative w="full xl:1024px" h-full mx-auto>
@@ -66,7 +67,5 @@ watch(seconds, () => {
                 <slot />
             </div>
         </main>
-
-        <img src="https://mc.yandex.ru/watch/88904510" style="position:absolute; left:-9999px;" alt="" />
     </div>
 </template>
