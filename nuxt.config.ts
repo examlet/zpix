@@ -34,7 +34,7 @@ export default defineNuxtConfig({
         }
     },
     // You can define the CSS files/modules/libraries you want to set globally (included in every page).
-    //css: ["@/assets/css/index.css"],
+    css: ["@/assets/css/index.css"],
     //
     modules: [
         "@vueuse/nuxt",
