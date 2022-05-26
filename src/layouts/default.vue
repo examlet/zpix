@@ -36,7 +36,7 @@ watch(seconds, () => {
                                     <div bg="[#35495e]" bottom="-6px" w-20px h-2px rounded-4px />
                                 </div>
                             </div>
-                            <div fw-600 text="20px" mb="2px">PARTA ENEM</div>
+                            <div fw-600 text="20px">PARTA ENEM</div>
                             <div hidden sm:block ml-40px>
                                 Pagamento de mensalidades on-line
                             </div>
