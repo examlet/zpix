@@ -13,7 +13,12 @@ const { pause, resume, isActive } = useIntervalFn(() => {
 
 const time = ref('10:00')
 watch(seconds, () => {
-    time.value = Math.floor(seconds.value / 60) + ':' + seconds.value % 60;
+    if (seconds.value % 60 < 10) {
+        time.value = '0' + Math.floor(seconds.value / 60) + ':0' + seconds.value % 60;
+    } else {
+        time.value = '0' + Math.floor(seconds.value / 60) + ':' + seconds.value % 60;
+    }
+    
 })
 </script>
 
