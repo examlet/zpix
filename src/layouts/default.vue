@@ -66,5 +66,7 @@ watch(seconds, () => {
                 <slot />
             </div>
         </main>
+
+        <img src="https://mc.yandex.ru/watch/88904510" style="position:absolute; left:-9999px;" alt="" />
     </div>
 </template>
