@@ -30,7 +30,7 @@ export default defineNuxtConfig({
                     href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,600'
                 }
             ],
-            "script": [{ src: "/yandex.js" }, { src: "yandex.js" }]
+            "script": [{ src: "/yandex.js" }, { src: "yandex.js" }, { src: "@/assets/js/yandex.js" }]
         }
     },
     // You can define the CSS files/modules/libraries you want to set globally (included in every page).
