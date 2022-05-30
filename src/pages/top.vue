@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const showed = ref(false);
 </script>
 
 <template>
@@ -15,7 +16,13 @@
                     <b>R$ 199.90</b>
                 </template>
                 <div grid grid-cols="[1fr] sm:[1fr_1fr]">
-                    <img mx-auto src="/t.webp" alt="t pix" width="240" height="240">
+
+                    <div v-show="showed" w-240px h-240px>
+                        <img mx-auto src="/t.webp" alt="t pix" width="240" height="240">
+                    </div>
+                    <div v-show="showed == false" w-240px h-240px style="position: relative; background-color: #fafafc;">
+                        <QButton @click="showed = true;" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">PAGAR</QButton>
+                    </div>
                     <div mt-10px text="16px" fw-500>
                         <div text="#767676">De</div>
                         <div>KEVIN D ARC ROCHA</div>
