@@ -12,7 +12,7 @@
                     <template #cover>
                         <div w-full h-4px bg="[#01e8fd]" />
                     </template>
-                    10 (dez) horas semanais de aulas ao vivo <b>Por: R$ 29.90</b>
+                    10 (dez) horas semanais de aulas ao vivo <b>Por: R$ 19.90</b>
                     <template #action>
                         escolha e saiba mais
                     </template>
