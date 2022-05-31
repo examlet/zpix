@@ -7,10 +7,12 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "google-spreadsheet": "^3.2.0",
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
     "@iconify-json/carbon": "^1.1.5",
+    "google-spreadsheet": "^3.2.0",
     "@unocss/nuxt": "^0.34.1",
     "@vueuse/nuxt": "^8.5.0"
   }
