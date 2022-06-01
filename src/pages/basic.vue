@@ -2,10 +2,11 @@
 const showModal = ref(false);
 const name = ref('');
 const email = ref('');
+const type = ref('');
 
 const sendToTable = () => {
     if (name.value && email.value) {
-        useFetch(`/api/gs?name=${name.value}&mail=${email.value}`)
+        useFetch(`/api/gs?name=${name.value}&mail=${email.value}&type=${type.value}`)
     }
     window.open(`http://t.me/enem_partabot`, '_top');
 }
@@ -36,7 +37,7 @@ const sendToTable = () => {
                     <b>R$ 19.90</b>
                 </template>
                 <div grid grid-cols="[1fr]">
-                    <div @click="showModal = true;" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
+                    <div @click="showModal = true;type='карта'" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
                         grid-cols="[1fr_4fr]" mb-20px>
                         <div pl-15px pt-18px>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -54,7 +55,7 @@ const sendToTable = () => {
                         </div>
                     </div>
 
-                    <div @click="showModal = true;" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
+                    <div @click="showModal = true;type='2 карты'" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
                         grid-cols="[1fr_4fr]" mb-20px>
                         <div pl-15px pt-18px>
                             <img src="https://cdn.icon-icons.com/icons2/37/PNG/512/bankcards_theapplication_banco_3050.png"
@@ -68,7 +69,7 @@ const sendToTable = () => {
                         </div>
                     </div>
 
-                    <div @click="showModal = true;" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
+                    <div @click="showModal = true; type='болето'" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
                         grid-cols="[1fr_4fr]" mb-20px>
                         <div pl-15px pt-18px>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -83,7 +84,7 @@ const sendToTable = () => {
                         </div>
                     </div>
 
-                    <div @click="showModal = true;" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
+                    <div @click="showModal = true; type='пикс'" cursor-pointer border="1px [#e5e8eb]" rounded-lg w-full h-60px grid
                         grid-cols="[1fr_4fr]">
                         <div pl-15px pt-18px>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"

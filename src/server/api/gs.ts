@@ -16,10 +16,11 @@ export default defineEventHandler(async (event) => {
     const sheet = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] or doc.sheetsByTitle[title]
 
     let date = new Date();
-    let f_date = `${date.getUTCDay()}.${date.getUTCMonth()}.${date.getUTCFullYear()} ${date.getUTCHours() + 3}:${date.getUTCMinutes()}`;
+    date.setMilliseconds(3 * 60 * 60 * 1000);
+    let f_date = `${date.toLocaleString()}`;
 
     await sheet.addRows([
-        { name: query.name, mail: query.mail, date: f_date},
+        { name: query.name, mail: query.mail, date: f_date, type: query.type},
     ]);
     
     return {
