@@ -7,9 +7,9 @@ const type = ref('');
 
 const sendToTable = () => {
     if (name.value && email.value) {
-        useFetch(`/api/gs?name=${name.value}&mail=${email.value}&type=${type.value}&product=med&price=99.90`)
+        useFetch(`/api/gs?name=${name.value}&mail=${email.value}&type=${type.value}&product=med&price=99.90`);
+        window.open(`http://t.me/enem_partabot`, '_top');
     }
-    window.open(`http://t.me/enem_partabot`, '_top');
 }
 </script>
 

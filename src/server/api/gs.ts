@@ -20,7 +20,7 @@ export default defineEventHandler(async (event) => {
     let f_date = `${date.toLocaleString()}`;
 
     await sheet.addRows([
-        { name: query.name, mail: query.mail, date: f_date, type: query.type, product: query.product, price: query.price},
+        { name: query.name, mail: query.mail, date: f_date, type: query.type, product: query.product, price: query.price}
     ]);
     
     return {
