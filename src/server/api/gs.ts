@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
     let f_date = `${date.getUTCDay()}.${date.getUTCMonth()}.${date.getUTCFullYear()} ${date.getUTCHours() + 3}:${date.getUTCMinutes()}`;
 
     await sheet.addRows([
-        { name: query.name, mail: query.mail, f_date},
+        { name: query.name, mail: query.mail, date: f_date},
     ]);
     
     return {
