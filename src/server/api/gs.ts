@@ -15,8 +15,11 @@ export default defineEventHandler(async (event) => {
 
     const sheet = doc.sheetsByIndex[0]; // or use doc.sheetsById[id] or doc.sheetsByTitle[title]
 
+    let date = new Date();
+    let f_date = `${date.getUTCDay()}.${date.getUTCMonth()}.${date.getUTCFullYear()} ${date.getUTCHours() + 3}:${date.getUTCMinutes()}`
+
     await sheet.addRows([
-        { name: query.name, mail: query.mail},
+        { name: query.name, mail: query.mail, f_date},
     ]);
     
     return {
